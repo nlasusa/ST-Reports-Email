@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>SecuritiesTracker Email Design Template</title>
+    <title>SecuritiesTracker Welcome User Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -12,6 +12,28 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color:white;
+}
+
+p {
+    padding-left: 30px; 
+    padding-right: 10px; 
+    font-size: 14px; 
+}
+
+.container {
+    max-width: 600px; 
+    border: 1px solid rgb(238, 238, 238); 
+    margin: 0 auto; 
+    margin-top: 60px; 
+    margin-bottom: 40px; 
+}
+
+#all-rights {
+    color: black; 
+    font-size: 10px;
+    letter-spacing: .5px;
+    padding-bottom: 40px; 
+    text-align: center; 
 }
 
 table {
@@ -24,22 +46,10 @@ td {
     background-color: white; 
     color: black; 
     font-size: 14px; 
-    padding-left: 20px; 
-    padding-right: 5px; 
+    padding-left: 30px; 
+    padding-right: 10px; 
 }
 
-#client-name-1, #client-name-2 {
-    font-size: 20px; 
-    font-weight: bold; 
-}
-
-#client-name-1 {
-    padding-top: 23px;
-}
-
-#client-name-2 {
-    padding-top: 50px;
-}
 
 * {
   box-sizing: border-box;
@@ -64,7 +74,6 @@ a {
 
 #log-in:hover {
     cursor: pointer; 
-    color: #cacaca
 }
 
 a:hover {
@@ -72,26 +81,40 @@ a:hover {
     color: #0376e2;
 }
 
-#all-rights {
-    color: black; 
-    font-size: 10px;
-    letter-spacing: .5px;
-    padding-bottom: 40px; 
+#client-name-1, #client-name-2 {
+    font-size: 20px; 
+    font-weight: bold; 
+    padding-left: 20px; 
+}
+
+#client-name-1 {
+    padding-top: 5px;
+}
+
+#client-name-2 {
+    padding-top: 45px;
+}
+
+#social-icons {
+    text-align: center; 
+    padding-top: 20px; 
 }
 
 .row {
   display: flex;
   line-height: 26px; 
+  font-size: 14px; 
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
+.col-6 {
   flex: 50%;
   padding-left: 24px;
   padding-right: 24px; 
   padding-top: 30px; 
   color: black; 
 }
+
+/* Create two equal columns that sits next to each other */
 
 .fa {
     font-size: 25px; 
@@ -101,71 +124,71 @@ a:hover {
 </style>
 </head>
 
-<body style="margin: 0; padding: 0; padding-top:30px;">
-    <table align="center" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; background-color: white;">
-        <td align="center" style="padding: 0 0 30px 0;">
-            <img src="https://ktmc.com/webfiles/Images/ST%20copy%202.png"/>
+    <div class="container">
+        <td>
+            <img src="https://ktmc.com/webfiles/Images/ST%20copy%202.png" style="width: 100%;" />
             <div id="log-in"><a href="https://ktmc.com/security-tracker/login" style="color: white;">LOG IN</a></div>
         </td>
 
         <tr>
             <td>
-                <p style="margin: 0;">New documents are now available in your <i>SecuritiesTracker</i> account. You can view the document(s) by clicking the link below or by logging 
-                    into your account above.</p><br>
+                <p style="margin-top: 30px;">New documents are now available in your <i>SecuritiesTracker</i> account. You can view the document(s) by clicking the link below or by logging into your account above.</p><br>
             </td>
         </tr>
+
         <tr>
             <td>
-                <div id="client-name-1">  - &nbsp; INSTITUTIONAL INVESTOR CLIENT #1</div><hr>
-                <div class="row">
-                   <div class="column">
-                      <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">TD Ameritrade Holding Corportion</a>
-                      <div id="country"><u><span style="font-weight: bold">Country</u></span>: U.S.</div>
-                      <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Case Summary</div>
-                      <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: April 8, 2020 </div>
-                      <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: May 18, 2020 </div>
-                      <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: Remain a Passive Class Member</div>
-                      <div id="comments"><u><span style="font-weight: bold">Comments</u></span>: -- </div>
-                    </div>
-                    <div class="column">
-                      <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">Petrofac Ltd. - October 2019 Update</a>
-                      <div id="country"><u><span style="font-weight: bold">Country</u></span>: United Kingdom</div>
-                      <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Case Summary</div>
-                      <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: October 1, 2019 </div>
-                      <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: October 31, 2019 </div>
-                      <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: Action Recommended</div>
-                      <div id="comments"><u><span style="font-weight: bold;">Comments</u></span>: <span style="color: rgb(248, 0, 0); font-weight: bold;">Opt-In Action: Registration Required to Participate</span></div>
-                    </div>
-                </div>
+        <div id="client-name-1">  - &nbsp; INSTITUTIONAL INVESTOR CLIENT #1</div><hr>
+        <div class="row">
+            <div class="col-6">
+               <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">TD Ameritrade Holding Corportion</a>
+               <div id="country"><u><span style="font-weight: bold">Country</u></span>: U.S.</div>
+               <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Case Summary</div>
+               <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: April 8, 2020 </div>
+               <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: May 18, 2020 </div>
+               <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: Remain a Passive Class Member</div>
+               <div id="comments"><u><span style="font-weight: bold">Comments</u></span>: -- </div>
+             </div>
+             <div class="col-6">
+               <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">Petrofac Ltd. - October 2019 Update</a>
+               <div id="country"><u><span style="font-weight: bold">Country</u></span>: United Kingdom</div>
+               <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Case Summary</div>
+               <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: October 1, 2019 </div>
+               <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: October 31, 2019 </div>
+               <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: Action Recommended</div>
+               <div id="comments"><u><span style="font-weight: bold;">Comments</u></span>: <span style="color: rgb(248, 0, 0); font-weight: bold;">Opt-In Action: Registration Required to Participate</span></div>
+             </div>
+         </div>
 
-                <div class="row">
-                   <div class="column">
-                      <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">Volkswagen AG - May 2021 Update</a>
-                      <div id="country"><u><span style="font-weight: bold">Country</u></span>: Germany</div>
-                      <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Active Participant Updte</div>
-                      <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: May 20, 2021 </div>
-                      <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: --</div>
-                      <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: --</div>
-                      <div id="comments"><u><span style="font-weight: bold">Comments</u></span>: For Your Information </div>
-                    </div>
-                    <div class="column">
-                      <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">AMP Limited</a>
-                      <div id="country"><u><span style="font-weight: bold">Country</u></span>: Australia</div>
-                      <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Class Closure Notice</div>
-                      <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: November 9, 2020 </div>
-                      <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: November 17, 2020</div>
-                      <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: Action Recommended</div>
-                      <div id="comments"><u><span style="font-weight: bold;">Comments</u></span>: <span style="color: rgb(248, 0, 0); font-weight: bold;">Settlement Claim Registration Required to Potentially Recover</span></div>
-                    </div>
-                </div>
+         <div class="row">
+            <div class="col-6">
+               <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">Volkswagen AG - May 2021 Update</a>
+               <div id="country"><u><span style="font-weight: bold">Country</u></span>: Germany</div>
+               <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Active Participant Updte</div>
+               <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: May 20, 2021 </div>
+               <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: --</div>
+               <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: --</div>
+               <div id="comments"><u><span style="font-weight: bold">Comments</u></span>: For Your Information </div>
+             </div>
+             <div class="col-6">
+               <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">AMP Limited</a>
+               <div id="country"><u><span style="font-weight: bold">Country</u></span>: Australia</div>
+               <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Class Closure Notice</div>
+               <div id="date-posted"><u><span style="font-weight: bold">Date Posted</u></span>: November 9, 2020 </div>
+               <div id="deadline"><u><span style="font-weight: bold">Deadline</u></span>: November 17, 2020</div>
+               <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: Action Recommended</div>
+               <div id="comments"><u><span style="font-weight: bold;">Comments</u></span>: <span style="color: rgb(248, 0, 0); font-weight: bold;">Settlement Claim Registration Required to Potentially Recover</span></div>
+             </div>
+         </div>
+
             </td>
         </tr>
-   
+
         <tr>
             <td>
                 <div id="client-name-2">  - &nbsp; INSTITUTIONAL INVESTOR CLIENT #2</div><hr>
                 <div class="row">
-                    <div class="column">
+                    <div class="col-6">
                       <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">Fourth Quarter 2020</a>
                       <div id="country"><u><span style="font-weight: bold">Country</u></span>: --</div>
                       <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Quarterly Litigation Report</div>
@@ -174,7 +197,7 @@ a:hover {
                       <div id="doc-rec"><u><span style="font-weight: bold">KTMC Recommendation</u></span>: --</div>
                       <div id="comments"><u><span style="font-weight: bold">Comments</u></span>: -- </div>
                     </div>
-                    <div class="column">
+                    <div class="col-6">
                       <a href="https://ktmc.com/security-tracker/login"style="color:#027cee; line-height: 20px;">Relevant LIBOR-Based Financial Instruments (U.S. Dollar - Bondholders)</a>
                       <div id="country"><u><span style="font-weight: bold">Country</u></span>: U.S.</div>
                       <div id="doc-type"><u><span style="font-weight: bold">Document Type</u></span>: Settlement Alert</div>
@@ -187,18 +210,27 @@ a:hover {
             </td>
         </tr>
 
+        <br><br>
+
         <tr>
-            <td align="center" style="font-size: 22px; padding-top:40px;">
+            <td>
+            <div id="social-icons">
                 <a href="https://www.facebook.com/KTMClaw/" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/ktmclaw?lang=en" class="fa fa-twitter"></a>
                 <a href="https://www.linkedin.com/company/kessler-topaz-meltzer-&-check-llp" class="fa fa-linkedin"></a>
                 <a href="https://www.instagram.com/ktmclaw/" class="fa fa-instagram"></a>
-                <div id="all-rights"> KESSLER TOPAZ MELTZER & CHECK, LLP &#169; 2021 ALL RIGHTS RESERVED</div>
+            </div>
+                
+            <div id="all-rights"> KESSLER TOPAZ MELTZER & CHECK, LLP &#169; 2021 ALL RIGHTS RESERVED</div>
+
             </td>
              </td>
         </tr>
-    </table>
+    </div>
+   
+</body>
 
+</html>
    
 </body>
 
